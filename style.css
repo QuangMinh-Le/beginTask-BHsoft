@@ -1,7 +1,7 @@
 :root{
     --clr-pink: #FF64AE;
-    --clr-title: #091156;
-    --clr-description: #8B8B8B;
+    --clr-blue: #091156;
+    --clr-gray: #8B8B8B;
     --clr-bg: #FFFFFF;
     ;
 
@@ -38,7 +38,19 @@ body {
 .Logo {
     width: 258px;
     height: 63px;
+    box-sizing: border-box;
+    transition: all ease .5s;
+}
+
+.Logo img{
+    transition: all ease .5s;
+    width: 100%;
+}
+
+.Logo img:hover {
+    width: 280px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: all ease .5s;
 }
 
 .Menu {
@@ -61,7 +73,7 @@ header ul li{
 
 header ul li a {
     text-decoration: none;
-    color: var(--clr-description);
+    color: var(--clr-gray);
     font-family: var(--ff-all);
     font-weight: 500;
     font-size: 16px;
@@ -107,13 +119,137 @@ header button p{
 }
 
 header button:hover{
-    background: var(--clr-title);
+    background: var(--clr-blue);
     border: 4px solid var(--clr-pink);
     transition: all ease .4s;
 }
 
 header button:active{
     background: var(--clr-pink);
+
+}
+
+
+
+/* Main Slider */
+
+
+main {
+    position: relative;
+}
+
+.Slider {
+    position: relative;
+    height: 805px;
+    left: 0px;
+    top: 0px;
+}
+
+.bg-slider {
+    width: 1266.42px;
+    height: 743px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    z-index: -10;
+}
+
+.frames {
+    top: 263px;
+    left: 180px;
+    position: relative;
+    display: flex;
+}
+
+.frame1 {
+    width: 430px;
+    box-sizing: border-box;
+}
+
+.frame2 {
+    width: 601.5px;
+    height: 397.5px;
+    margin-left: 66px;
+}
+
+h1,h2,h3,h4,h5,h6, p{
+    font-family: var(--ff-all);
+}
+
+.frame1 h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 125%;
+    color: var(--clr-blue);
+}
+
+.frame1 p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: var(--clr-blue);
+    padding-top: 20px;
+}
+
+.frame1 .details-button {
+    padding-top: 40px;
+}
+
+.frame1 .details-button button {
+    width: 200px;
+    height: 58.36px;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--clr-pink);
+    border: 1px solid var(--clr-pink);
+
+    color: white;
+    font-family: var(--ff-all);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+
+    transition: all ease .4s;
+}
+
+.frame1 .details-button button:hover {
+
+    border: none;
+    background-color: var(--clr-blue);
+    color: white;
+    border: 4px solid var(--clr-pink);
+    transition: all ease .4s;
+}
+
+.slides-button {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 71px;
+    height: 8.15px;
+    left: 685px;
+    top: 795px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+
+}
+
+.slides-button > div{
+    background-color: var(--clr-gray);
+    z-index: 10;
+    width: 14.82px;
+    height: 3.09px;
+    margin: 2px;
+    border-radius: 50px;
+
+}
+
+.slides-button > div:nth-child(2){
+    background-color: var(--clr-blue);
 
 }
 
