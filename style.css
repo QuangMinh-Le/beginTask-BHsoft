@@ -1537,7 +1537,7 @@ main {
     
     .box-proTeams .left, .box-proTeams .right, .box-proTeams .mid{
         width: 80%;
-        height: 300px;
+        height: 340px;
         align-items: center;
         justify-content: center;
         margin-top: 40px;
@@ -1818,7 +1818,7 @@ main {
 
 @media (max-width: 850px) {
     .Contact {
-        margin-top: 140px;
+        margin-top: 220px;
     }
     
     .info-contactUs {
@@ -1841,7 +1841,7 @@ main {
 
 @media (max-width: 700px) {
     .Contact {
-        margin-top: 100px;
+        margin-top: 300px;
     }
     
     .info-contactUs {
@@ -2350,7 +2350,7 @@ footer {
 @media (max-width:800px) {
     .left-footer img{
         width: 200px;
-        height: 60px;
+        height: 50px;
     }
 }
 
