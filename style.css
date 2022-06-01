@@ -1043,6 +1043,7 @@ main {
         font-weight: 600;
         font-size: 14px;
         padding-left: 13px;
+        margin-top: 0;
     }
     
     .image-aboutUs img {
@@ -1204,10 +1205,10 @@ main {
     }
     
     .button-aboutUs {
-        margin-top: 20px;
+        margin-top: 30px;
         align-items: center;
-        margin: auto;
         justify-content: center;
+
     }
     
     .button-aboutUs button{
@@ -1227,17 +1228,16 @@ main {
         height: 49px;  
         padding-left: 14px;
         display: flex;
-
+        margin-top: 0;
 
     }
     
     .watch-vid p {
         font-weight: 600;
         font-size: 14px;
-        padding-left: 13px;
         width: 90%;
-        height: 100%;
-        margin-top: 0;
+        margin: 0;
+        text-align: center;
     }
     
     .image-aboutUs img {
